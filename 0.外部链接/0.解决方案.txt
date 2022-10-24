@@ -1,3 +1,5 @@
 【java 判断上传文件大小 MultipartFile File】https://blog.csdn.net/weixin_37582991/article/details/87810514
 
 【在Ubuntu 20上面安装OpenJDK17】https://www.cnblogs.com/majestyking/p/15859610.html
+
+【解决Ubuntu安装的mysql没有设置root密码】https://blog.csdn.net/yubo_725/article/details/91043871
