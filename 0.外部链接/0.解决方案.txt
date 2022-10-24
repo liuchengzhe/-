@@ -3,3 +3,5 @@
 【在Ubuntu 20上面安装OpenJDK17】https://www.cnblogs.com/majestyking/p/15859610.html
 
 【解决Ubuntu安装的mysql没有设置root密码】https://blog.csdn.net/yubo_725/article/details/91043871
+
+【Ubuntu安装mysql并设置可远程访问】https://www.jianshu.com/p/1ae05561c9b6
