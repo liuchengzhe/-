@@ -5,3 +5,5 @@
 【解决Ubuntu安装的mysql没有设置root密码】https://blog.csdn.net/yubo_725/article/details/91043871
 
 【Ubuntu安装mysql并设置可远程访问】https://www.jianshu.com/p/1ae05561c9b6
+
+【java 返回数据存在"$ref":"$.data.*** "的问题】https://blog.csdn.net/java_xxxx/article/details/104418403
