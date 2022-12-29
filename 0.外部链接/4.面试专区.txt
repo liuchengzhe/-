@@ -26,3 +26,12 @@
 若在构造方法中创建并启动了一个线程，并且出现指令重排序（先进行步骤3，再进行步骤2）的情况时，线程中会直接输出对象的默认赋值
 【多个】
 多条指令可能会重排序
+【注意】对变量使用volatile后，可以禁止指令重排序
+（
+  详解：
+  【内存屏障】https://baijiahao.baidu.com/s?id=1666283243240041852&wfr=spider&for=pc
+  【happen-before】https://blog.csdn.net/ma_chen_qq/article/details/82990603/
+  【happen-before扩展】https://blog.csdn.net/qq_35576976/article/details/106423055?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-106423055-blog-82990603.pc_relevant_landingrelevant&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+）
+
+
