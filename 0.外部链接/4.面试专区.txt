@@ -1,7 +1,7 @@
 【面试大全】https://github.com/CoderLeixiaoshuai/java-eight-part
 
 一、多线程
-【线程池的核心线程数、最大线程数如何设置最合适】
+（1）线程池的核心线程数、最大线程数如何设置最合适
 1、CPU密集型：
 最大线程数：N+1
 核心线程数：N
@@ -9,3 +9,8 @@
 最大线程数：2N+1
 核心线程数：2N
 【重点】需经过压测获得最佳线程数配置
+
+（2）线程的创建方式
+1、【一般线程创建】new Thread(()->{}).start();
+2、【futureTask】new Thread(futureTask).start();
+3、【线程池】ThreadPoolExecutor
