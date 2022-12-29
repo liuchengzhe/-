@@ -1,1 +1,10 @@
 【面试大全】https://github.com/CoderLeixiaoshuai/java-eight-part
+
+一、多线程
+【线程池的核心线程数、最大线程数如何设置最合适】
+1、CPU密集型：
+最大线程数：
+核心线程数：
+2、IO密集型：
+最大线程数：
+核心线程数：
