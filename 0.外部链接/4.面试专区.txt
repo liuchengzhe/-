@@ -21,6 +21,7 @@
 使用volatile的变量在修改时，保证主存和副本的变量始终是一致的
 【注意】若变量是一个引用类型，想让引用类型的成员变量可见，则需要用volatile修饰成员变量，而不要用volatile修饰引用
 2、有序性：
+单线程保证最终一致性
 【单个】
 对象在创建的时候，会经历三步：1、空间申请 2、默认值赋值 3、引用关联对象空间
 若在构造方法中创建并启动了一个线程，并且出现指令重排序（先进行步骤3，再进行步骤2）的情况时，线程中会直接输出对象的默认赋值
@@ -33,5 +34,6 @@
   【happen-before】https://blog.csdn.net/ma_chen_qq/article/details/82990603/
   【happen-before扩展】https://blog.csdn.net/qq_35576976/article/details/106423055?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-106423055-blog-82990603.pc_relevant_landingrelevant&spm=1001.2101.3001.4242.1&utm_relevant_index=3
 ）
-
+3、原子性
+多条指令不可分割，为原子操作
 
