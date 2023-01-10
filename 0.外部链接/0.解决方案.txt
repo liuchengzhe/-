@@ -5,5 +5,4 @@
 【java 返回数据存在"$ref":"$.data.*** "的问题】https://blog.csdn.net/java_xxxx/article/details/104418403
 
 【@Transactional注解的失效场景】https://juejin.cn/post/6844904096747503629
-
 【手写mini版@Transactional】https://juejin.cn/post/7023964835788357639?share_token=50be28e6-8b88-4aea-b1d1-8068f65e0149
