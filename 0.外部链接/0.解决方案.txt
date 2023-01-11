@@ -1,8 +1,7 @@
 【java 判断上传文件大小 MultipartFile File】https://blog.csdn.net/weixin_37582991/article/details/87810514
+【java 返回数据存在"$ref":"$.data.*** "的问题】https://blog.csdn.net/java_xxxx/article/details/104418403
 
 【解决Ubuntu安装的mysql没有设置root密码】https://blog.csdn.net/yubo_725/article/details/91043871
-
-【java 返回数据存在"$ref":"$.data.*** "的问题】https://blog.csdn.net/java_xxxx/article/details/104418403
 
 【@Transactional注解的失效场景】https://juejin.cn/post/6844904096747503629
 【手写mini版@Transactional】https://juejin.cn/post/7023964835788357639?share_token=50be28e6-8b88-4aea-b1d1-8068f65e0149
@@ -18,3 +17,4 @@
 【简述SpringBoot Starter原理及自定义实现】https://blog.csdn.net/vipshop_fin_dev/article/details/119765644
 
 【分布式事务，这一篇就够了】https://xiaomi-info.github.io/2020/01/02/distributed-transaction/
+【分布式事务的七种实现方案汇总分析】https://cloud.tencent.com/developer/article/1710684
