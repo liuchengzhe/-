@@ -7,7 +7,7 @@
 分：
 1、一般聊IOC容器的时候涉及到容器的创建过程（重要：beanFactory，DefaultListableBeanFactory），向bean工厂中设置一些参数（BeanPostProcessor，Aware接口的子类）等等属性
 2、加载解析bean对象，准备要创建的bean对象的定义对象BeanDefinition（XML或注解的解析过程）
-3、beanFactoryPostProcessor的处理，此处是扩展点，PlaceHolderConfigSupport，ConfigurationClassProcessor
+3、BeanFactoryPostProcessor的处理，此处是扩展点，PlaceHolderConfigSupport，ConfigurationClassProcessor
 4、BeanPostProcessor的注册功能，方便后续对bean对象完成具体的扩展功能
 5、通过反射的方式将BeanDefinition对象实例化成具体的bean对象
 6、bean对象的初始化过程（填充属性，调用aware子类的方法，调用BeanPostProcessor前置处理方法，调用init-method方法，调用BeanPostProcessor的后置处理方法）
