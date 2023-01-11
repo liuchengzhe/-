@@ -22,6 +22,7 @@
 5、进行其他的初始化操作（InitializingBean）
 
 三、描述一下bean的生命周期
+背图：https://juejin.cn/post/6844904065457979405
 
 四、Spring是如何解决循环依赖的问题的
 
