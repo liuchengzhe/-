@@ -15,6 +15,11 @@
 8、销毁过程
 
 二、谈一下Spring IOC的底层实现
+1、先通过createBeanFactory创建出一个Bean工厂（DefaultListableBeanFactory）
+2、开始循环创建对象，因为容器中的bean默认都是单例的，所以优先通过getBean，doGetBean从容器中查找
+3、找不到的话，通过createBean，doCreateBean方法，以反射的方式创建对象，一般情况下使用的是无参构造方法（getDeclaredConstructor，newInstance）
+4、进行对象填充populateBean
+5、进行其他的初始化操作（InitializingBean）
 
 三、描述一下bean的生命周期
 
