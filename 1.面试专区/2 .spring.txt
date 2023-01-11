@@ -23,6 +23,11 @@
 
 三、描述一下bean的生命周期
 背图：https://juejin.cn/post/6844904065457979405
+在表述的时候不要只说图中的关键点，要学会扩展
+1、实例化bean，反射的方式生成对象
+2、填充bean的属性：populateBean()，循环依赖问题（三级缓存）
+3、调用aware接口的相关方法：invokeAwareMethod（完成BeanName，BeanFactory，BeanClassLoader对象的属性设置）
+4、调用BeanPostProcessor中的前置处理方法：使用比较多的有（ApplicationContextPostProcessor，设置ApplicationContext，Enviroonment，ResourceLoader，EmbeddedValueResolver等对象）
 
 四、Spring是如何解决循环依赖的问题的
 
