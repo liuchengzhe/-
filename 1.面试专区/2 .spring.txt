@@ -1,1 +1,17 @@
+一、谈谈Srping IOC的理解、原理与实现
 
+二、谈一下Spring IOC的底层实现
+
+三、描述一下bean的生命周期
+
+四、Spring是如何解决循环依赖的问题的
+
+五、Bean Factory与FactoryBean有什么区别
+
+六、Spring中用到的设计模式
+
+七、Spring的AOP的底层实现原理
+
+八、Srping的事务是如何回滚的
+
+九、谈一下Spring事务传播
