@@ -1,5 +1,4 @@
 一、谈谈Srping IOC的理解、原理与实现
-【理解】
 总：
 1、控制反转：原来的对象是由使用者控制的，有了Spring之后，可以把整个对象交给Spring来帮助我们进行管理
    依赖注入（DI）：把对应的属性的值注入到具体的对象中，@Autowired完成属性值的注入
@@ -22,12 +21,16 @@
 5、进行其他的初始化操作（InitializingBean）
 
 三、描述一下bean的生命周期
-背图：https://juejin.cn/post/6844904065457979405
+背图：【https://juejin.cn/post/6844904065457979405】
 在表述的时候不要只说图中的关键点，要学会扩展
 1、实例化bean，反射的方式生成对象
 2、填充bean的属性：populateBean()，循环依赖问题（三级缓存）
 3、调用aware接口的相关方法：invokeAwareMethod（完成BeanName，BeanFactory，BeanClassLoader对象的属性设置）
 4、调用BeanPostProcessor中的前置处理方法：使用比较多的有（ApplicationContextPostProcessor，设置ApplicationContext，Enviroonment，ResourceLoader，EmbeddedValueResolver等对象）
+5、调用initmethod方法：invokeinitmethod()，判断是否实现了InitializingBean，如果有，调用afterPropertiesSet方法，没有就不会调用
+6、调用BeanPostProcessor的后置处理方法：Spring的aop就是在此处实现的，AbstractAutoProxyCreator
+7、获取到完整的对象，可以通过getBean的方式来进行对象的获取
+8、销毁路程：（1）是否实现了DisposableBean接口 （2）调用destroy()方法
 
 四、Spring是如何解决循环依赖的问题的
 
