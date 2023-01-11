@@ -14,3 +14,5 @@
 【99分位、95分位计算 实时分位数的统计方法】https://blog.csdn.net/spirit_8023/article/details/116982349
 
 【zookeeper集群部署节点为奇数的原因（最少3个）】https://blog.csdn.net/zhujuntiankong/article/details/118215150
+
+【简述SpringBoot Starter原理及自定义实现】https://blog.csdn.net/vipshop_fin_dev/article/details/119765644
