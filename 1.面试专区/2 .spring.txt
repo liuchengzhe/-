@@ -1,4 +1,18 @@
 一、谈谈Srping IOC的理解、原理与实现
+【理解】
+总：
+1、控制反转：原来的对象是由使用者控制的，有了Spring之后，可以把整个对象交给Spring来帮助我们进行管理
+   依赖注入（DI）：把对应的属性的值注入到具体的对象中，@Autowired完成属性值的注入
+2、容器：存储对象，使用map结构来存储，在spring中一般存在三级缓存，singletonObject存放完整的object对象。整个bean的生命周期，从创建到销毁的过程都是由容器来管理的
+分：
+1、一般聊IOC容器的时候涉及到容器的创建过程（重要：beanFactory，DefaultListableBeanFactory），向bean工厂中设置一些参数（BeanPostProcessor，Aware接口的子类）等等属性
+2、加载解析bean对象，准备要创建的bean对象的定义对象BeanDefinition（XML或注解的解析过程）
+3、beanFactoryPostProcessor的处理，此处是扩展点，PlaceHolderConfigSupport，ConfigurationClassProcessor
+4、BeanPostProcessor的注册功能，方便后续对bean对象完成具体的扩展功能
+5、通过反射的方式将BeanDefinition对象实例化成具体的bean对象
+6、bean对象的初始化过程（填充属性，调用aware子类的方法，调用BeanPostProcessor前置处理方法，调用init-method方法，调用BeanPostProcessor的后置处理方法）
+7、生成完整的bean对象，通过getBean方法可以直接获取
+8、销毁过程
 
 二、谈一下Spring IOC的底层实现
 
