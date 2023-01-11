@@ -32,6 +32,7 @@
 7、注册destruction相关的回调接口
 8、获取到完整的对象，可以通过getBean的方式来进行对象的获取
 9、销毁路程：（1）是否实现了DisposableBean接口 （2）调用destroyMethod方法
+【博客】https://blog.csdn.net/FBB360JAVA/article/details/125547477?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-9-125547477-blog-126193536.pc_relevant_recovery_v2&spm=1001.2101.3001.4242.6&utm_relevant_index=12
 
 四、Spring是如何解决循环依赖的问题的
 
