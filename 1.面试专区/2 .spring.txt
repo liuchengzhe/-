@@ -31,7 +31,7 @@
 6、调用BeanPostProcessor的后置处理方法：Spring的aop就是在此处实现的，AbstractAutoProxyCreator
 7、注册destruction相关的回调接口
 8、获取到完整的对象，可以通过getBean的方式来进行对象的获取
-9、销毁路程：（1）是否实现了DisposableBean接口 （2）调用destroy()方法
+9、销毁路程：（1）是否实现了DisposableBean接口 （2）调用destroyMethod方法
 
 四、Spring是如何解决循环依赖的问题的
 
