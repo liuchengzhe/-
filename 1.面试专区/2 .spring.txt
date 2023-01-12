@@ -89,11 +89,7 @@ bean的创建过程中有一个步骤可以对bean进行扩展，aop本身就是
 （5）从拦截器中依次获取每个通知开始执行，在执行过程中，为了方便找到下一个通知是哪个，会有一个CglibMethodInvocation对象，找的时候是从-1的位置开始查找并开始执行的
 
 
-八、Srping的事务是如何回滚的
-
-九、谈一下Spring事务传播
-
-十、spring的事务是如何实现的
+八、Srping的事务是如何实现的
 总：
 spring的事务是通过TransactionInterceptor实现的
 分：
@@ -103,5 +99,11 @@ spring的事务是通过TransactionInterceptor实现的
 4、在操作过程中，如果执行失败了，那么会通过completeTransactionAfterThrowing来完成事务的回滚操作，回滚的具体逻辑是通过doRollBack方法来实现的，实现的时候也要先获取连接对象，通过连接对象来回滚
 5、如果执行过程中，没有任何意外情况的发生，那么通过commitTransactionAfterReturning来完成事务的提交操作，提交的具体逻辑是通过doCommit方法来实现的，实现的时候也是要获取连接，通过连接对象来提交
 6、当事务执行完毕之后需要清除相关事务信息cleanupTransactionInfo
+
+九、谈一下Spring事务传播特性
+传播特性种类：7种
+【博客】https://juejin.cn/post/6844903938928427022
+
+
 
 
