@@ -1,2 +1,4 @@
 【steam-七日杀docker部署】https://juejin.cn/post/7115678882698788900
 【七日杀配置文件详解】https://blog.csdn.net/weixin_42553920/article/details/113810169
+
+【搭建mindustry“像素工厂”服务器】https://www.anyfan.top/archives/189/
