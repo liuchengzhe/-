@@ -76,6 +76,14 @@
 委托者模式：delegate
 
 七、Spring的AOP的底层实现原理
+动态代理
+aop是ioc的一个扩展功能，现有的ioc，再有的aop，只是在ioc的整个流程中新增的一个扩展点而已：BeanProcessor
+总：
+aop概念，应用场景，动态代理
+分：
+bean的创建过程中有一个步骤可以对bean进行扩展，aop本身就是一个扩展功能，所以在BeanPostProcessor的后置处理方法中进行实现
+（1）代理对象的创建过程（advice，切面，切点）
+（2）通过jdk或者cglib的方式来生成代理对象
 
 八、Srping的事务是如何回滚的
 
