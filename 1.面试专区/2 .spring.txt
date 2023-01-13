@@ -35,6 +35,9 @@
 【博客】https://blog.csdn.net/FBB360JAVA/article/details/125547477?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-9-125547477-blog-126193536.pc_relevant_recovery_v2&spm=1001.2101.3001.4242.6&utm_relevant_index=12
 【博客】https://blog.csdn.net/u010013573/article/details/86657356
 
+Aware的应用实例：
+ApplicationContextAware继承Aware，静态类中无法使用@Autowired注入bean（静态类无法被spring容器管理），所以可以通过ApplicationContextAware获取applicationContext，继而获取容器中的bean（getBean方法）
+
 四、Spring是如何解决循环依赖的问题的
 三级缓存，提前暴露对象，aop
 总：
