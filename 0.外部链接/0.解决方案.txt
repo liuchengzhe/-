@@ -17,3 +17,5 @@
 
 【分布式事务，这一篇就够了】https://xiaomi-info.github.io/2020/01/02/distributed-transaction/
 【分布式事务的七种实现方案汇总分析】https://cloud.tencent.com/developer/article/1710684
+
+【Spring 创建Bean的6种方式】https://www.cnblogs.com/lgjlife/p/11060570.html
