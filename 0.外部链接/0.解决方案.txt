@@ -32,5 +32,8 @@
 【SSO单点登录流程详解】https://zhuanlan.zhihu.com/p/334720992
 
 【Apache JMeter 入门教程】https://www.jianshu.com/p/6bc152ca6126
+【测试高并发：模拟100个用户先登陆后调接口】https://blog.csdn.net/u010695169/article/details/103971257?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-103971257-blog-104009201.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-103971257-blog-104009201.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1
+
+
 
 
