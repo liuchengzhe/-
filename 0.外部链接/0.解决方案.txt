@@ -36,6 +36,10 @@
 
 【四万字32图，Kafka知识体系保姆级教程宝典】https://blog.51cto.com/u_14932245/4340967?u_atoken=5c810cc6-d960-4ad7-85ec-705095e08648&u_asession=01wZJuKybSiHlEaptO9lLlRq5fMDZ3G5pAOPZ2zgaob4tlTy2Jlt5UU490_NMBU6PYX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K9x7skE2I1HxsNgck_T4zBwh7GcPad4mb__XBJTdZjcE2BkFo3NEHBv0PZUm6pbxQU&u_asig=05s4r5di7KSYa8I9JfvIpj9eDmnm4aNRsDwMzIORQ9y-6CNIxKyTcKQaH6pD9avS0p-Pl9Pmo0qNQXp_bAvFpzPawoXjp1uEVpnfkevoPTO5a59G9hfUEUGOyZoA2KWO6auzq5YniF8eCQ_eKwrSld7hKN7vsrfX0-D2ekc56pKnL9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzaMSQ_lHvRhtn2Aizj93bEZ4gESoBkOgUQa40hsyZaZZYJFp5QZST9aL3r0eEUA0m-3h9VXwMyh6PgyDIVSG1W8HoIHyE9tPva5JeUYPhwEnc4hdGpgLysLHwMnvN5SoYwmAAKBNlJ_9DsC3hu1d1Dx_0XvG6ANXjEhdEfr-6rrdmWspDxyAEEo4kbsryBKb9Q&u_aref=kjEFX6A0i%2BRSpA%2F4WtHRzXSbJxo%3D
 
-
+【网络编程基础】https://www.liaoxuefeng.com/wiki/1252599548343744/1305163149082658
+【TCP编程】https://www.liaoxuefeng.com/wiki/1252599548343744/1305207629676577
+【UDP编程】https://www.liaoxuefeng.com/wiki/1252599548343744/1319099802058785
+【java之UDP协议下socket编程（单播广播多播）】https://juejin.cn/post/6844903918535720973
+【UDP与TCP区别以及长、短连接】https://blog.csdn.net/JiaMing11_27/article/details/119651846
 
 
