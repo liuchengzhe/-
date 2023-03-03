@@ -43,3 +43,7 @@
 【UDP与TCP区别以及长、短连接】https://blog.csdn.net/JiaMing11_27/article/details/119651846
 
 【java中的valueOf与parseXXX有啥区别】https://blog.csdn.net/Mart1nn/article/details/89737490
+
+【mybatis问题排查经验】https://sillybilly-share.top/mybatis%20Mapper%E6%98%A0%E5%B0%84%E9%97%AE%E9%A2%98.html
+
+
