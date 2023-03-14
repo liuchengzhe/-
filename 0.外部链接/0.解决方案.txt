@@ -22,6 +22,10 @@
 
 【Spring 创建Bean的6种方式】https://www.cnblogs.com/lgjlife/p/11060570.html
 
+【拦截器HandlerInterceptorAdapter使用方法】https://www.cnblogs.com/Im-Victor/p/14756761.html
+【andlerInterceptorAdapter之自定义拦截器】https://blog.csdn.net/qq_57756904/article/details/120577983?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-120577983-blog-128838216.pc_relevant_landingrelevant&spm=1001.2101.3001.4242.2&utm_relevant_index=4
+【HandlerInterceptorAdapter拦截器多个拦截器时执行的顺序】https://blog.csdn.net/qq_41029282/article/details/128838216?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-4-128838216-blog-85029748.pc_relevant_3mothn_strategy_and_data_recovery&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-4-128838216-blog-85029748.pc_relevant_3mothn_strategy_and_data_recovery&utm_relevant_index=9
+
 【Apache Thrift 初识 (1) - 简介】https://wujun234.com/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/05%20Apache%20Thrift/1%20Apache%20Thrift%20%E5%88%9D%E8%AF%86%20(1)%20-%20%E7%AE%80%E4%BB%8B/
 【Apache Thrift 初识 (2) - 数据类型与基本语法】https://wujun234.com/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/05%20Apache%20Thrift/2%20Apache%20Thrift%20%E5%88%9D%E8%AF%86%20(2)%20-%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/
 【Apache Thrift 初识 (3) - 实战Demo】https://wujun234.com/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/05%20Apache%20Thrift/3%20Apache%20Thrift%20%E5%88%9D%E8%AF%86%20(3)%20-%20%E5%AE%9E%E6%88%98Demo/
