@@ -10,8 +10,7 @@
 【单点登录】
 1、基本概念
 2、解决了什么问题
-3、如何使用
-4、常用单点登录框架
+3、常用单点登录框架，以及如何使用（典型框架OAuth2）
 
 【@RequestBody无法传输多余参数】
 1、xml文件mvc:message-converters自定义配置mvc:message-converters（消息转换器）
@@ -30,6 +29,7 @@
 2、默认线程池以及他们的缺点
 3、CompletableFuture.allOf常可用于合并多个异步线程执行结果（搭配CompletableFuture.supplyAsync使用）
 
-
-
+【权限控制】
+1、权限控制流程
+2、常用权限控制框架，以及如何使用（典型Spring Security）
 
