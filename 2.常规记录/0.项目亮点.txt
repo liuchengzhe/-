@@ -12,6 +12,11 @@
 2、解决了什么问题
 3、常用单点登录框架，以及如何使用（典型框架OAuth2）
 
+【权限控制】
+1、权限控制流程
+2、解决了什么问题
+3、常用权限控制框架，以及如何使用（典型框架Spring Security）
+
 【@RequestBody无法传输多余参数】
 1、xml文件mvc:message-converters自定义配置mvc:message-converters（消息转换器）
 2、源代码排查路径（springmvc版本号【org.springframework:spring-webmvc:4.0.5.RELEASE】）
@@ -29,7 +34,5 @@
 2、默认线程池以及他们的缺点
 3、CompletableFuture.allOf常可用于合并多个异步线程执行结果（搭配CompletableFuture.supplyAsync使用）
 
-【权限控制】
-1、权限控制流程
-2、常用权限控制框架，以及如何使用（典型Spring Security）
+
 
