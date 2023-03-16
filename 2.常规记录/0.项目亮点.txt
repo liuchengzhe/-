@@ -25,3 +25,11 @@ org.springframework.http.converter.json.MappingJackson2HttpMessageConverter#read
 com.fasterxml.jackson.databind.ObjectMapper#readValue(java.io.InputStream, com.fasterxml.jackson.databind.JavaType)
 3、根源：默认使用的是jackson，换成fastjson就可以解决此问题
 
+【线程池】
+1、线程池参数配置
+2、默认线程池以及他们的缺点
+3、CompletableFuture.allOf常可用于合并多个异步线程执行结果（搭配CompletableFuture.supplyAsync使用）
+
+
+
+
