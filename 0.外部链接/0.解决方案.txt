@@ -51,3 +51,4 @@
 【mybatis问题排查经验】https://sillybilly-share.top/mybatis%20Mapper%E6%98%A0%E5%B0%84%E9%97%AE%E9%A2%98.html
 【mybatis中大于等于小于等于的写法】https://blog.csdn.net/xuanzhangran/article/details/60329357
 
+【Spring Security整合Spring Boot分布式认证】https://blog.csdn.net/qq_42402854/article/details/122784304
