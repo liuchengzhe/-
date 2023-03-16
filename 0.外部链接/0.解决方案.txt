@@ -52,3 +52,4 @@
 【mybatis中大于等于小于等于的写法】https://blog.csdn.net/xuanzhangran/article/details/60329357
 
 【Spring Security整合Spring Boot分布式认证】https://blog.csdn.net/qq_42402854/article/details/122784304
+【分布式系统认证解决方案SpringSecurityOAuth2.0（一）认证授权】https://blog.csdn.net/DreamsArchitects/article/details/119777733
