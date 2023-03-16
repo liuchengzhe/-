@@ -16,13 +16,13 @@
 【@RequestBody无法传输多余参数】
 1、xml文件mvc:message-converters自定义配置mvc:message-converters（消息转换器）
 2、源代码排查路径（springmvc版本号【org.springframework:spring-webmvc:4.0.5.RELEASE】）
-org.springframework.web.method.support.HandlerMethodArgumentResolverComposite#resolveArgument
-org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor#resolveArgument
-org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor#readWithMessageConverters
-org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver#readWithMessageConverters(org.springframework.http.HttpInputMessage, org.springframework.core.MethodParameter, java.lang.reflect.Type)
-org.springframework.http.converter.json.MappingJackson2HttpMessageConverter#read
-org.springframework.http.converter.json.MappingJackson2HttpMessageConverter#readJavaType
-com.fasterxml.jackson.databind.ObjectMapper#readValue(java.io.InputStream, com.fasterxml.jackson.databind.JavaType)
+  org.springframework.web.method.support.HandlerMethodArgumentResolverComposite#resolveArgument
+  org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor#resolveArgument
+  org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor#readWithMessageConverters
+  org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver#readWithMessageConverters(org.springframework.http.HttpInputMessage, org.springframework.core.MethodParameter, java.lang.reflect.Type)
+  org.springframework.http.converter.json.MappingJackson2HttpMessageConverter#read
+  org.springframework.http.converter.json.MappingJackson2HttpMessageConverter#readJavaType
+  com.fasterxml.jackson.databind.ObjectMapper#readValue(java.io.InputStream, com.fasterxml.jackson.databind.JavaType)
 3、根源：默认使用的是jackson，换成fastjson就可以解决此问题
 
 【线程池】
