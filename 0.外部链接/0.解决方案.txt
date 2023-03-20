@@ -51,6 +51,7 @@
 【mybatis问题排查经验】https://sillybilly-share.top/mybatis%20Mapper%E6%98%A0%E5%B0%84%E9%97%AE%E9%A2%98.html
 【mybatis中大于等于小于等于的写法】https://blog.csdn.net/xuanzhangran/article/details/60329357
 【Mybatis 查询结果返回 Map、List＜Map＞、Pair】https://blog.csdn.net/jx520/article/details/87452574
+【动态 SQL】https://mybatis.org/mybatis-3/zh/dynamic-sql.html
 
 【Spring Security整合Spring Boot分布式认证】https://blog.csdn.net/qq_42402854/article/details/122784304
 【分布式系统认证解决方案SpringSecurityOAuth2.0（一）认证授权】https://blog.csdn.net/DreamsArchitects/article/details/119777733
