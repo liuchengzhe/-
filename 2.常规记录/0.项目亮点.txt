@@ -17,6 +17,12 @@
 2、解决了什么问题
 3、常用权限控制框架，以及如何使用（典型框架Spring Security）
 
+【手撕权限控制树】
+1、菜单展示（json），前端需要树状数据
+2、权限的读取：配置中心+递归构建树状结构
+3、最小权限控制：需要删除多余的权限，递归删除多余元素（包含父节点删除）
+
+
 【@RequestBody无法传输多余参数】
 1、xml文件mvc:message-converters自定义配置mvc:message-converters（消息转换器）
 2、源代码排查路径（springmvc版本号【org.springframework:spring-webmvc:4.0.5.RELEASE】）
