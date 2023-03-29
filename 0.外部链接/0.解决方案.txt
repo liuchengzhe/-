@@ -5,6 +5,8 @@
 
 【解决Ubuntu安装的mysql没有设置root密码】https://blog.csdn.net/yubo_725/article/details/91043871
 
+【踩坑系列之Lombok @Builder 注解】https://developer.aliyun.com/article/744593
+
 【@Transactional注解的失效场景】https://juejin.cn/post/6844904096747503629
 【手写mini版@Transactional】https://juejin.cn/post/7023964835788357639?share_token=50be28e6-8b88-4aea-b1d1-8068f65e0149
 
