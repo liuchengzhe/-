@@ -1,0 +1,6 @@
+【new Date(String)过期替代方案】
+Stirng cstDateString = "Tue Apr 11 18:33:57 CST 2023";
+String DATE_FORMAT = "EEE MMM dd HH:mm:ss z yyyy";
+Date date = new SimpleDateFormat(DATE_FORMAT, Locale.ENGLISH).parse(cstDateString);
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+System.out.println(simpleDateFormat.format(date1));
