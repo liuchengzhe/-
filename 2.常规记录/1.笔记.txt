@@ -6,59 +6,66 @@ SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 System.out.println(simpleDateFormat.format(date1));
 
 【多线程任务分割与结果合并】
-	/**
-	 * 根据商品id查询关联信息
-	 *
-	 * @param goodIdList 商品id列表
-	 * @return 关联信息
-	 */
-	private Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> queryGoodInfo(List<String> goodIdList) {
-		if (CollectionUtils.isEmpty(goodIdList)) {
-			return null;
-		}
-
-		int count = (int) Math.ceil(goodIdList.size() / 50.0);
-		CompletableFuture[] completableFutures = new CompletableFuture[count];
-
-		for (int i = 0; i < count; i++) {
-			int finalI = i;
-			CompletableFuture future = CompletableFuture.supplyAsync(() -> {
-				List<String> copyGoodIdList = goodIdList.subList(finalI * 50, (finalI + 1) * 50 <= goodIdList.size() ? (finalI + 1) * 50 : goodIdList.size());
-				try {
-					// 请求参数构建
-					List<Long> merchandiseNoList = copyGoodIdList.stream().map(Long::parseLong).collect(toList());
-					// 参数返回值选定
-					com.vip.somp.sales.frontend.struct.MerchandiseFieldType[] queryFields = {
-							com.vip.somp.sales.frontend.struct.MerchandiseFieldType.SPU_BASIC,
-							com.vip.somp.sales.frontend.struct.MerchandiseFieldType.CATEGORY_LEVEL
-					};
-
-					logger.info("根据商品id查询关联信息-根据no列表查询专场SPU聚合信息,请求参数【{}】", JSON.toJSONString(copyGoodIdList));
-					Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> respMap = salesQueryService.batchGetMerchandise(merchandiseNoList, Arrays.stream(queryFields).collect(toList()), null, null);
-					logger.info("根据商品id查询关联信息-根据no列表查询专场SPU聚合信息,请求结果【{}】", LogUtil.encryptLog(respMap));
-
-					return respMap;
-				} catch (OspException e) {
-					logger.error("根据商品id查询关联信息-根据no列表查询专场SPU聚合信息异常 【{}】", JSON.toJSONString(copyGoodIdList),e);
-					return null;
-				}
-			}, pool);
-			completableFutures[i] = future;
-		}
-
-		CompletableFuture.allOf(completableFutures);
-
-		try {
-			Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> result = new HashMap<>();
-			for (CompletableFuture completableFuture : completableFutures) {
-				if (completableFuture.get() != null) {
-					result.putAll((Map<Long, MerchandiseInfo>) completableFuture.get());
-				}
-			}
-			return result;
-		} catch (Exception e) {
-			logger.error("根据商品id查询关联信息-合并结果异常", e);
-		}
-
+/**
+ * 根据商品id查询关联信息
+ *
+ * @param goodIdList 商品id列表
+ * @return 关联信息
+ */
+private Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> queryGoodInfo(List<String> goodIdList) {
+	if (CollectionUtils.isEmpty(goodIdList)) {
 		return null;
 	}
+
+	int count = (int) Math.ceil(goodIdList.size() / 50.0);
+	CompletableFuture[] completableFutures = new CompletableFuture[count];
+
+	for (int i = 0; i < count; i++) {
+		int finalI = i;
+		CompletableFuture future = CompletableFuture.supplyAsync(() -> {
+			List<String> copyGoodIdList = goodIdList.subList(finalI * 50, (finalI + 1) * 50 <= goodIdList.size() ? (finalI + 1) * 50 : goodIdList.size());
+			try {
+				// 请求参数构建
+				List<Long> merchandiseNoList = copyGoodIdList.stream().map(Long::parseLong).collect(toList());
+				// 参数返回值选定
+				com.vip.somp.sales.frontend.struct.MerchandiseFieldType[] queryFields = {
+						com.vip.somp.sales.frontend.struct.MerchandiseFieldType.SPU_BASIC,
+						com.vip.somp.sales.frontend.struct.MerchandiseFieldType.CATEGORY_LEVEL
+				};
+
+				logger.info("根据商品id查询关联信息-根据no列表查询专场SPU聚合信息,请求参数【{}】", JSON.toJSONString(copyGoodIdList));
+				Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> respMap = salesQueryService.batchGetMerchandise(merchandiseNoList, Arrays.stream(queryFields).collect(toList()), null, null);
+				logger.info("根据商品id查询关联信息-根据no列表查询专场SPU聚合信息,请求结果【{}】", LogUtil.encryptLog(respMap));
+
+				return respMap;
+			} catch (OspException e) {
+				logger.error("根据商品id查询关联信息-根据no列表查询专场SPU聚合信息异常 【{}】", JSON.toJSONString(copyGoodIdList),e);
+				return null;
+			}
+		}, pool);
+		completableFutures[i] = future;
+	}
+
+	CompletableFuture.allOf(completableFutures);
+
+	try {
+		Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> result = new HashMap<>();
+		for (CompletableFuture completableFuture : completableFutures) {
+			if (completableFuture.get() != null) {
+				result.putAll((Map<Long, MerchandiseInfo>) completableFuture.get());
+			}
+		}
+		return result;
+	} catch (Exception e) {
+		logger.error("根据商品id查询关联信息-合并结果异常", e);
+	}
+
+	return null;
+}
+
+
+
+
+
+
+
