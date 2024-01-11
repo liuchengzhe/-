@@ -42,3 +42,15 @@ volatile可以保证操作的有序性
 2、临界区短、锁粒度细，选择乐观锁
 【注意】synchronized被优化过多次，可以选用
 
+五、Future & FutureTask 使用详解
+https://juejin.cn/post/7031785726484152333
+
+六、CompletableFuture用法详解
+https://zhuanlan.zhihu.com/p/344431341
+
+
+
+
+
+
+
