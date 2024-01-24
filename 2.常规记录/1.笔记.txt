@@ -65,7 +65,7 @@ private Map<Long, com.vip.somp.sales.frontend.struct.MerchandiseInfo> queryGoodI
 
 
 【拦截器HandlerInterceptorAdapter使用方法】https://www.cnblogs.com/Im-Victor/p/14756761.html
-
+【单点登录】https://developer.aliyun.com/article/636281
 
 
 
